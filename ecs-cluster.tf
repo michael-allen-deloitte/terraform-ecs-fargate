@@ -151,7 +151,7 @@ resource "aws_instance" "ecs-cluster-runner" {
   }
 }
 
-# create security group and segurity rules for the ecs cluster
+# create security group and secSurity rules for the ecs cluster
 resource "aws_security_group" "ecs-cluster-host" {
   name        = "${var.app_name}-ecs-cluster-host"
   description = "${var.app_name}-ecs-cluster-host"
